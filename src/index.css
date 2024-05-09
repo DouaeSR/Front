@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.profile-section {
+  background-color: #ddd;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.points {
+  color: #999;
+}
+
+.sidebar {
+  background-color:white;
+  width: 250px;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  float: left; 
+  overflow: auto;
+  border-right: #999;
+  border-right-style: solid;
+  border-width: 1px;
+
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+  color: black;
+}
+
+.sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  
+}
+
+.sidebar-menu li a {
+  text-decoration: none;
+  color: black;
+  padding:10px 0;
+
+}
+
+.sidebar-menu li a:hover {
+  background-color: #5598a5;
+  
+}
+.sidebar p {
+  margin-top: 330px;
+  font-size:1px ;
+}
+
+.appointments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.appointment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background-color: #c82333;
+}

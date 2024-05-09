@@ -1,0 +1,196 @@
+body {
+  overflow-x: hidden;
+}
+
+.cover-container {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+}
+
+.cover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/hp.jpg");
+  background-size: cover;
+  z-index: -1;
+  background-attachment: fixed;
+}
+
+.content {
+  position: absolute;
+  top: 55%;
+  left: 80px;
+  transform: translateY(-50%);
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+
+  color: black;
+}
+.content h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.btn {
+  color: white;
+  background-color: #1b4965;
+  border: 1px solid #1b4965;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+}
+.btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.image {
+  flex: 1;
+  margin-right: 20px;
+  margin-left: 30px;
+}
+
+.image img {
+  max-width: 95%;
+  height: auto;
+  display: block;
+}
+
+.ctt {
+  flex: 1;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-right: 300px;
+  justify-content: space-around;
+  margin-top: 20px;
+  
+  
+}
+
+.buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1b4965;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.ctt h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.ctt p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.sr {
+  background-color: #eeeeee;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sr h1 {
+  font-size: 40px;
+  margin-left: 80px;
+  margin-bottom: 50px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.box {
+  flex: 1;
+  margin-right: 150px;
+  max-width: calc(33.33% - 20px);
+  margin-left: 100px;
+  text-align: center;
+}
+
+.box:last-child {
+  margin-right: 0;
+}
+
+.box img {
+  width: 40%;
+  height: auto;
+  display: block;
+  margin-left: 5px;
+ 
+}
+.box h3 {
+  margin-left: 5px;
+}
+
+.contai {
+  display: flex;
+  align-items: flex-start;
+}
+
+.imag {
+  flex: 2;
+  margin-right: 0;
+}
+
+.imag img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 2;
+}
+
+.bx {
+  border: 1px solid #eeeeee;
+  text-align: center;
+  padding-top: 9.5px;
+
+  padding-bottom: 14.5px;
+  flex: 0 0 calc(25% - 2px);
+  margin: 0;
+}
+
+.bx i {
+  font-size: 40px;
+}
+
+.bx h3 {
+  margin-top: 6px;
+  margin-bottom: 1px;
+}
+.bx p {
+}
+
+.stethoscope-icon {
+  color: #3a7cbf;
+}
+.bx:hover {
+  background-color: #3a7cbf;
+  color: white;
+}
+
+.bx:hover i {
+  color: white;
+}
