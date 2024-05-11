@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import '../../css/SignUp.css'
 import { useState } from "react";
-import { Axios } from 'axios';
+import axios from 'axios';
 
 
 function SignUp() {
@@ -16,7 +16,7 @@ function SignUp() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        Axios.post('http://localhost:3000/',{firstname,lastname,birthday,gender,email,password})
+        axios.post('http://localhost:4000/api/patients/signup',{firstname,lastname,birthday,gender,email,password})
         .then(result=> console.log(result))
 
     };
@@ -29,28 +29,31 @@ function SignUp() {
             <div className="input-group">
                 <label htmlFor="first-name">First Name</label>
                 <input type="text"
-                 id="first-name"
+                 
                  name="first-name"
                  onChange={(e)=> setFirstName(e.target.value)}
+                 value={firstname}
                  
                  /> 
             </div>
             <div className="input-group">
                 <label htmlFor="last-name">Last Name</label>
                 <input type="text"
-                 id="last-name"
+               
                  name="last-name"
                  onChange={(e)=> setLastName(e.target.value)}
+                 value={lastname}
                  
                  />
             </div>
-            <div class="input-group">
+            <div className="input-group">
                
                <label htmlFor="gender">Gender</label>
                <select
-                id="gender" 
+                
                 name="gender"
                 onChange={(e)=> setGender(e.target.value)}
+                value={gender}
                 >
                    <option value="">Select</option>
                    <option value="male">Male</option>
@@ -58,13 +61,14 @@ function SignUp() {
                    
                </select>
            </div>
-           <div class="input-group">
+           <div className="input-group">
                <label htmlFor="birthday">Birthday</label>
                <input 
                 type="date"
-                id="birthday"
+              
                 name="birthday"
                 onChange={(e)=> setBirthDay(e.target.value)}
+                value={birthday}
                  />
            </div>
            
@@ -72,18 +76,19 @@ function SignUp() {
                 <label htmlFor="email">Email</label>
                 <input
                   type="email"
-                  id="email"
+                 
                   name="email" 
                   onChange={(e)=> setEmail(e.target.value)}
+                  value={email}
                 />
             </div>
             <div className="input-group">
                 <label htmlFor="password">Password</label>
                 <input
                   type="password"
-                  id="password"
                   name="password"
                   onChange={(e)=> setPassword(e.target.value)}
+                  value={password}
                 />
             </div>
             <button type="submit">Sign Up</button>

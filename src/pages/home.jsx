@@ -1,4 +1,9 @@
-
+import Home1 from '../images/home1.jpg'
+import Home2 from '../images/home2.jpg'
+import Image1 from '../images/image1.png'
+import Image2 from '../images/image2.png'
+import Image3 from '../images/image3.png'
+import { Link } from 'react-router-dom';
 import '../css/Home.css'
 function Home() {
     return (
@@ -8,13 +13,13 @@ function Home() {
           <div className="content">
               <h1>Better health at your fingertips</h1>
               <p>With this website you get your own online booking system where patients can schedule appointments 24/7 with certified doctors.</p>
-              <button className="btn"><a href="#">Make an appointment</a></button>
+              <button className="btn"><Link to="/patient/signup">Make an appointment</Link></button>
           </div>
       </div>
 
       <div className="container1">
           <div className="image">
-          <img src={require('../images/dl.jpg')} alt="Image"/>
+          <img src={Home1} alt="smth"/>
               
           </div>
           <div className="ctt">
@@ -22,8 +27,8 @@ function Home() {
               <p>Dats in an online doctor appointment booking website where the patients can book appointments with doctors. The patients can book appointments anytime, anywhere with their desired doctors according to their problems.</p>
               <p>After creating an account, the user can book a slot or they can even cancel an appointment. The user can be a patient or doctor, and both can receive emails from each other.</p>
               <div className="buttons">
-                  <button><a href="#">Make an appointment</a></button>
-                  <button><a href="#">Contact us</a></button>
+                  <button><Link to="/patient/signup">Make an appointment</Link></button>
+                  <button><Link to="/login">Contact us</Link></button>
               </div>
           </div>
       </div>
@@ -32,17 +37,17 @@ function Home() {
           <h1>Our services</h1>
           
             <div className="box">
-              <img src={require('../images/image1.png')} alt="Image 1"/>
+              <img src={Image1} alt=" smth"/>
               <h3>Search</h3>
               <p>You can search for any doctor you want or search the specialty according to your problem and then choose your doctor</p>
           </div>
           <div className="box">
-              <img src={require('../images/image2.png')} alt="Image 2"/>
+              <img src={Image2} alt="smth"/>
               <h3>Book</h3>
               <p>You can book an appointment with your desired doctors anytime everywhere</p>
           </div>
           <div className="box">
-              <img src={require('../images/image3.png')} alt="Image 3"/>
+              <img src={Image3} alt="smth"/>
               <h3>Manage</h3>
               <p>You can manage your appointments add, modify or cancel either you're a doctor or a patient</p>
           </div>
@@ -51,7 +56,7 @@ function Home() {
 
       <div className="contai">
           <div className="imag">
-          <img src={require('../images/hp.jpg')} alt="Image"/>
+          <img src={Home2} alt="smth"/>
           </div>
           <div className="boxes">
               <div className="bx">

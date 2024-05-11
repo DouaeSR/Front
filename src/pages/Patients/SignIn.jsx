@@ -1,32 +1,56 @@
 // import Aside from "../../components/aside";
 import "../../css/SignIn.css";
+import { Link } from 'react-router-dom';
+import { useState } from "react";
+import axios from "axios";
 function SignIn() {
+
+  const  [email, setEmail] =useState ('')
+  const  [password, setPassword] =useState ('')
+
+
+  const handleSubmit = (e) => {
+
+    e.preventDefault();
+    axios.post('http://localhost:4000/api/login',{email,password})
+        .then(result=> console.log(result))
+   
+
+};
   return (
     
-    <div class="login-container">
+    <div className="login-container">
       
       <h2>Login</h2>
-      <form action="login.php" method="POST">
+      <form onSubmit={handleSubmit}>
         
-        <div class="input-group">
+      <div className="input-group">
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  name="email" 
+                  onChange={(e)=> setEmail(e.target.value)}
+                  value={email}
+                />
+            </div>
+            <div className="input-group">
+                <label htmlFor="password">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  onChange={(e)=> setPassword(e.target.value)}
+                  value={password}
+                />
+            </div>    
+        <div className="forgot-password">
           
-          <label for="username">Username</label>
-          <input type="text" id="username" name="username" required />
-        </div>
-        <div class="input-group">
-          
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" required />
-        </div>
-        <div class="forgot-password">
-          
-          <a href="forgot_password.php">Forgot Password?</a>
+          <Link to="/login">Forgot Password?</Link>
         </div>
         <button type="submit">Login</button>
       </form>
-      <div class="signup-link">
+      <div className="signup-link">
         
-        Don't have an account? <a href="signup.php">Sign Up</a>
+        Don't have an account? <Link to="/patients/signup">Sign Up</Link>
       </div>
     </div>
   );

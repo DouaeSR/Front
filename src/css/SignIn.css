@@ -36,7 +36,7 @@ h2 {
     margin-bottom: 15px;
 }
 
-.forgot-password a {
+.forgot-password Link {
     color: #5598a5;
     text-decoration: none;
 }
@@ -61,7 +61,7 @@ button:hover {
     margin-top: 15px;
 }
 
-.signup-link a {
+.signup-link Link {
     color: #5598a5;
     text-decoration: none;
 }
