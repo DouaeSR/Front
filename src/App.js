@@ -8,6 +8,8 @@ import PatientSignUp from './pages/Patients/SignUp';
 import LogIn from './pages/Patients/SignIn';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import DocProfile from './pages/Patients/Doctors/DocProfile';
+import Booking from './pages/Patients/Doctors/Booking';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
               <Route path="/patient/appointments" element={<PatientAppointments />}/>
               <Route path="/patient/profile" element={<PatientProfile />}/>
               <Route path="/patient/newapp" element={<PatientNewAppointment />}/>
+              <Route path="/patient/DocProfile" element={<DocProfile />}/>
+              <Route path="/patient/Booking" element={<Booking/>}/>
               <Route path="/patient/signup" element={<PatientSignUp/>}/>
               <Route path="/login" element={<LogIn />}/>
               <Route path="*" element={<Error />}/>

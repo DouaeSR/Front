@@ -1,3 +1,4 @@
+import '../../css/CurrentApp.css'
 function CurrentApp() {
     return (
         <section className="appointments">

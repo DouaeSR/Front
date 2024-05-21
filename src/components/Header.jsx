@@ -1,5 +1,23 @@
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { getInfo } from "../services/global";
+import '../css/Header.css'
+
+
 function Header() {
+
+  const [info,setInfo] = useState(null);
+  
+  const logout=()=>{
+    sessionStorage.clear();
+    window.location.href = "/";
+  }
+
+  useEffect(() => {    
+    setInfo(getInfo);
+  },[])
+
+
   return (
     <header>
       <nav className="navbar navbar-expand-lg bg-info">
@@ -61,10 +79,30 @@ function Header() {
             </ul>
             <ul className="navbar-nav">
               <li className="nav-item">
-              <NavLink className="nav-link text-white" to="/patient/signUp">SignUp</NavLink>
+              {
+                  !info &&
+                  <NavLink className="nav-link text-white" to="/patient/signUp">SignUp</NavLink>
+                } 
+
+                {
+                  info &&
+                  <p>{info.user.firstName} {info.user.lastName}</p>
+                }    
+              
               </li>
               <li className="nav-item">
-              <NavLink className="nav-link" to="/logIn">LogIn</NavLink>
+                
+                {
+                  !info &&
+                  <NavLink className="nav-link" to="/logIn">LogIn</NavLink>
+                } 
+
+                {
+                  info &&
+                  <NavLink className="nav-link" to="/" onClick={() => {logout()}} >LogOut</NavLink>
+                }    
+                
+              
               </li>
               
             </ul>

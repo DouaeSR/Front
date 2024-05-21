@@ -12,8 +12,13 @@ function SignIn() {
   const handleSubmit = (e) => {
 
     e.preventDefault();
-    axios.post('http://localhost:4000/api/login',{email,password})
-        .then(result=> console.log(result))
+    axios.post('http://localhost:4000/api/patients/login',{email,password})
+    .then((result) => {
+      if(result.status===200){          
+        sessionStorage.setItem('info', JSON.stringify(result.data));
+        window.location.href = "/patient/appointments";
+      }
+    })
    
 
 };

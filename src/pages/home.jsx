@@ -64,59 +64,59 @@ function Home() {
                   <h3>Dermatology</h3>
                   <p>Related to skin, hair, and nails.</p>
               </div>
-              <div class="bx">
-                <i class="fas fa-stethoscope stethoscope-icon"></i>
+              <div className="bx">
+                <i className="fas fa-stethoscope stethoscope-icon"></i>
                 <h3>Anesthesiology</h3>
                 <p>Put you in a deep sleep during surgery.</p>
             </div>
-            <div class="bx">
-                <i class="fas fa-stethoscope stethoscope-icon"></i>
+            <div className="bx">
+                <i className="fas fa-stethoscope stethoscope-icon"></i>
                 <h3>Cardiology</h3>
                 <p>Identify heart diseases.</p>
             </div>
 
-            <div class="bx">
-                <i class="fas fa-stethoscope stethoscope-icon"></i>
+            <div className="bx">
+                <i className="fas fa-stethoscope stethoscope-icon"></i>
                 <h3>Neurology</h3>
                 <p>Related to the brain,spinal cord and nerves.</p>
             </div>
-            <div class="bx">
-                <i class="fas fa-stethoscope stethoscope-icon"></i>
+            <div className="bx">
+                <i className="fas fa-stethoscope stethoscope-icon"></i>
                 <h3>Otolaryngology</h3>
                 <p>Related to ear,nose,throat,head and neck disorders.</p>
             </div>
-            <div class="bx">
-                <i class="fas fa-stethoscope stethoscope-icon"></i>
+            <div className="bx">
+                <i className="fas fa-stethoscope stethoscope-icon"></i>
                 <h3>Obstetrics</h3>
                 <p>Everything related to childbirth. </p>
             </div>
-            <div class="bx">
-                <i class="fas fa-stethoscope stethoscope-icon"></i>
+            <div className="bx">
+                <i className="fas fa-stethoscope stethoscope-icon"></i>
                 <h3>Pathology</h3>
                 <p>Science that studies diseases.</p>
             </div>
-            <div class="bx">
-                <i class="fas fa-stethoscope stethoscope-icon"></i>
+            <div className="bx">
+                <i className="fas fa-stethoscope stethoscope-icon"></i>
                 <h3>Pediatrics</h3>
                 <p>The care of children of all ages.</p>
             </div>
-            <div class="bx">
-                <i class="fas fa-stethoscope stethoscope-icon"></i>
+            <div className="bx">
+                <i className="fas fa-stethoscope stethoscope-icon"></i>
                 <h3>Psychiatry</h3>
                 <p>Treat mental health disorders.</p>
             </div>
-            <div class="bx">
-                <i class="fas fa-stethoscope stethoscope-icon"></i>
+            <div className="bx">
+                <i className="fas fa-stethoscope stethoscope-icon"></i>
                 <h3>Radiology</h3>
                 <p>Uses imaging techniques.</p>
             </div>
-            <div class="bx">
-                <i class="fas fa-stethoscope stethoscope-icon"></i>
+            <div className="bx">
+                <i className="fas fa-stethoscope stethoscope-icon"></i>
                 <h3>Rheumatology</h3>
                 <p>Diseases affecting skeletal functions.</p>
             </div>
-            <div class="bx">
-                <i class="fas fa-stethoscope stethoscope-icon"></i>
+            <div className="bx">
+                <i className="fas fa-stethoscope stethoscope-icon"></i>
                 <h3>Urology</h3>
                 <p>Diseases of the urinary tract.</p>
             </div>     
