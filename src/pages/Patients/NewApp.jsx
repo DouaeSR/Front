@@ -4,7 +4,7 @@ function NewApp() {
     return (
       <main>
         <Aside />
-        <div className="container">
+        <div className="NewApp-container">
             <div className="appointment-section">
                 <h2>New Appointment</h2>
                 <div className="select-speciality">

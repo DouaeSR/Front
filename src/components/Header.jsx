@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { getInfo } from "../services/global";
-import '../css/Header.css'
 
 
 function Header() {

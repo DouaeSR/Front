@@ -91,7 +91,7 @@ function SignUp() {
                   value={password}
                 />
             </div>
-            <button type="submit">Sign Up</button>
+            <button className="form-button" type="submit">Sign Up</button>
         </form>
         <p>Already have an account? </p> <Link to="/login">LogIn</Link>
     </div>

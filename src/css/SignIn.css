@@ -41,7 +41,7 @@ h2 {
     text-decoration: none;
 }
 
-button {
+.form-button {
     width: 100%;
     padding: 10px;
     border: none;
@@ -52,7 +52,7 @@ button {
     transition: background-color 0.3s;
 }
 
-button:hover {
+.form-button:hover {
     background-color: #5598a5;
 }
 

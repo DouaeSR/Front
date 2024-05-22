@@ -1,15 +1,17 @@
 import React from 'react';
-import '../../../css/DocProfile.css';
-import Docprofile from '../../../images/téléchargement.png'
+// import '../../../css/DocProfile.css';
+import Profilepic from'../../../images/téléchargement.png';
+
+
 
 
 function DoctorProfile() {
   return (
     <main>
       <div className="container">
-        <div className="section">
+        <div className="sectiond">
           <div className="profile">
-            <img src={Docprofile} alt="Doctor" />
+            <img src={Profilepic} alt="Doctor" />
             <h2>Dr. John Doe</h2>
             <p>Speciality: Cardiologist</p>
             <div className="rating">
@@ -29,8 +31,8 @@ function DoctorProfile() {
             <p>Address: 123 Main Street, City</p>
           </div>
         </div>
-        <div className="section2">
-          <nav className="navigation-bar">
+        <div className="sectiondinfo">
+          <nav className="navigation-barp">
             <ul>
               <li><a href="doctorspage.html">book</a></li>
               <li><a href="doctorprfl.html" className="active">profile</a></li>

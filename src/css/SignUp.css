@@ -37,7 +37,7 @@ h2 {
     border-radius: 5px;}
 
 
-button {
+.form-button {
     width: 100%;
     padding: 10px;
     background-color: #5598a5;
@@ -48,7 +48,7 @@ button {
     transition: background-color 0.3s;
 }
 
-button:hover {
+.form-button:hover {
     background-color: #5598a5;
 }
 

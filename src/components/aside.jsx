@@ -1,9 +1,11 @@
 import { NavLink } from "react-router-dom";
+import '../css/Aside.css'
+import Profpic from '../images/téléchargement.png'
 const Aside = () => {
   return (
     <div className="sidebar">
       <div className="profile">
-        {/* <img src="ppictures/téléchargement.png" alt="Profile Picture" className="profile-pic"> */}
+        <img src={Profpic} alt="Profile " className="profile-pic"/>
         <div className="profile-info">
           <div className="username">JohnDoe123</div>
           <div className="points">100% </div>
@@ -12,7 +14,7 @@ const Aside = () => {
       <hr />
       <ul className="sidebar-menu">
       <li>
-          <NavLink to="/patient/NewApp">
+          <NavLink to="/patient/newapp">
             <i className="fa-regular fa-plus-square"></i> Add appointment
           </NavLink>
         </li>

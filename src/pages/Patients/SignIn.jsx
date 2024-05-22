@@ -51,7 +51,7 @@ function SignIn() {
           
           <Link to="/login">Forgot Password?</Link>
         </div>
-        <button type="submit">Login</button>
+        <button className="form-button" type="submit">Login</button>
       </form>
       <div className="signup-link">
         
