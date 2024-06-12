@@ -5,31 +5,27 @@ function NewApp() {
       <main>
         <Aside />
         <div className="NewApp-container">
-            <div className="appointment-section">
-                <h2>New Appointment</h2>
-                <div className="select-speciality">
-                    <label for="speciality">Select a Speciality:</label>
-                    <div className="dropdown">
-                        <button className="dropbtn">Specialities <span>&#9660;</span></button>
-                        <div className="dropdown-content">
-                            <a href="#">Speciality 1</a>
-                            <a href="#">Speciality 2</a>
-                            <a href="#">Speciality 3</a>
-                            {/* <!-- Add more specialities as needed --> */}
-                        </div>
-                    </div>
-                </div>
-                <form className="choose-doctor">
-                    <label for="doctor">Choose Doctor:</label>
-                    <input type="text" id="doctor" name="doctor" placeholder="Enter doctor's name"/>
-                </form>
-                <button className="book-btn">Book</button>
-            </div>
-        </div>
-      </main>
-     
-    );
+ 
+    <div className="doctor-search-container">
+      <h1>Search for a Doctor</h1>
+      <div className="search-area">
+        <input
+          type="text"
+         placeholder="Enter doctor's name"
+          className="search-input"
+        />
+        <button className="search-button">
+          Search
+        </button>
+      </div>
+      <p>
+        Can't find your doctor? <a href="/explore" className="explore-link">Explore more options</a>
+      </p>
+    </div>
+    </div>
+  </main>
+   );
   }
-  
+
   export default NewApp;
   

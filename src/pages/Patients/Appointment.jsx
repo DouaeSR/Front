@@ -8,6 +8,7 @@ import { getInfo } from "../../services/global";
 import { getApointmentsPatient } from "../../services/appointment";
 
 function Appointment() {
+  const toDay = new Date().toJSON().slice(0, 10);
   let location = useLocation();
   const [page, setPage] = useState("Current Appointment");
   const [appointementsData, setAppointementsData] = useState([]);
@@ -29,10 +30,32 @@ function Appointment() {
 
   return (
     getInfo()  && (
+      
       <main>
-        <Aside />
-        {page === "Current Appointment" && <CurrentApp />}
-        {page === "Appointment History" && <HistoryApp />}
+      <Aside />        
+      {page === "Current Appointment" && (
+        <section className="appointments">
+         <h3>My current appointments</h3>
+          {appointementsData.map(
+            (apt) =>
+              apt.date.slice(0, 10) >= toDay && (
+                <CurrentApp key={apt._id} apt={apt} />
+              )
+          )}
+        </section>
+      )}
+
+      {page === "Appointment History" && (
+        <section className="appointments">
+            <h3>Appointments History</h3>
+            {appointementsData.map(
+              (apt) =>
+                apt.date.slice(0, 10) < toDay && (
+                  <HistoryApp key={apt._id} apt={apt} />
+                )
+            )}
+          </section>
+        )}
       </main>
     )
   );

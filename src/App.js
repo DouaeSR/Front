@@ -5,11 +5,13 @@ import PatientAppointments from './pages/Patients/Appointment';
 // import PatientProfile from './pages/Patients/Profile';
 import PatientNewAppointment from './pages/Patients/NewApp';
 import PatientSignUp from './pages/Patients/SignUp';
+import DoctorSignUp from './pages/Doctors/Signup'
 import LogIn from './pages/Patients/SignIn';
+import DoctorLogIn from './pages/Doctors/SignIn'
 import Header from './components/Header';
 import Footer from './components/Footer';
 import DocProfile from './pages/Patients/Doctors/DocProfile';
-import Booking from './pages/Patients/Doctors/Booking';
+// import Booking from './pages/Patients/Doctors/Booking';
 
 function App() {
   return (
@@ -22,9 +24,11 @@ function App() {
               {/* <Route path="/patient/profile" element={<PatientProfile />}/> */}
               <Route path="/patient/newapp" element={<PatientNewAppointment />}/>
               <Route path="/patient/DocProfile" element={<DocProfile />}/>
-              <Route path="/patient/Booking" element={<Booking/>}/>
+              {/* <Route path="/patient/Booking" element={<Booking/>}/> */}
               <Route path="/patient/signup" element={<PatientSignUp/>}/>
+              <Route path="/doctor/signup" element={<DoctorSignUp/>}/>
               <Route path="/login" element={<LogIn />}/>
+              <Route path="/doctor/login" element={<DoctorLogIn/>}/>
               <Route path="*" element={<Error />}/>
             </Routes>
         <Footer />
